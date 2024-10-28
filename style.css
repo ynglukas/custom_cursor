@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+html {
+    cursor: none;
+    background-color: #2d2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: 'Anton', 'helvetica', sans-serif;
+    font-size: 100px;
+    letter-spacing: 12px;
+    line-height: 1;
+    text-align: center;
+}
+
+h1 span {
+    letter-spacing: 15px;
+}
+
+.cursor {
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+.cursor__follower {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent */
+    transition: transform 0.4s ease-out;   /* Creates a delay effect */
+  }
